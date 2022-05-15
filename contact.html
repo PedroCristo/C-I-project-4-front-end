@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Document</title>
+
+    <!-- SCRIPT TO MAKE INTERNET EXPLORE BROWSER READING HTML5  -->
+    <!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- NORMALIZED CSS  -->
+    <link rel="stylesheet" href="assets/css/normalized.css">
+    <!-- JQUERY UI CSS -->
+    <link rel="stylesheet" href="../assets/js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap_5.1.0/css/bootstrap.min.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+<body>
+
+    <!-- SEARCH BOX SECTION -->
+    <section id="search-box">
+        <div class="search-nav">
+            <img src="./assets/images/logos/logo-tasty-blog-small-removebg.png" alt="Tasty blog logo image">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <form class="d-flex mx-auto col-md-8">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- END OF SEARCH BOX SECTION -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./assets/images/logos/logo-tasty-blog-small-removebg.png" alt="Tasty blog logo image"></a>
+            <button class="navbar-toggler box-shadow" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="categories.html">Categories</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="d-flex login-box">
+                    <li><a class="nav-link" href="">| Login</a></li>
+                    <li><a class="nav-link" href="">Register |</a></li>
+                </ul>
+                <p id="search-box-button" class="btn"><i class="fas fa-search"></i></p>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- SUB HERO SECTION -->
+    <section id="sub-hero" class="bg-setup parallax" style="background-image:url(./assets/images/footer-bg.jpg);">
+        <div class="overlay"></div>
+    </section>
+    <!-- END OF SUB HERO -->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2 class="title">Contact Us</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-details">
+                        <h4>Contacto</h4>
+                        <p><i class="fas fa-phone"></i>+089 9648 84547</p>
+                        <p><i class="far fa-envelope"></i>info@esquadria-sa.pt</p>
+                        <p><i class="fas fa-home"></i>2A Bow Lane - Dublin 8</p>
+                    </div>
+                    <div class="contact-details-img">
+                        <!-- <img src="./assets/images/logos/logo-tasty-blog-small-removebg.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- contact form -->
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="f-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="f-name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="s-name" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="s-name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" cols="40" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF CONTACT SECTION -->
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer bg-setup" style="background-image:url(./assets/images/footer-bg.jpg);">
+        <div class="overlay overlay-footer"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="footer-text">
+                        <img src="./assets/images/logos/logo-tasty-blog-small-removebg.png" alt="Tasty blog logo image">
+                        <p class="footer-text">Food is maybe the only universal thing that
+                            really has the power to bring everyone together. No matter what culture, everywhere around
+                            the world, people eat together.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i>+089 9648 84547</p>
+                    <p><i class="far fa-envelope"></i>info@tastyblog.com</p>
+                    <p><i class="fas fa-home"></i>2A Bow Lane - Dublin 8</p>
+                </div>
+                <div class="col-md-3 footer-box">
+                    <h4>Follow Us</h4>
+                    <p><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    </p>
+                    <p><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></p>
+                    <p><a href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram"></i>Instagram</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <h3><i class="far fa-copyright"></i> Copyright | Tasty Blog | <span id="year"></span></h3>
+            </div>
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <!-- JQUERY CDN -->
+    <script src="//code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <!-- IF CDN FAILS TO LOAD SERVE UP THE LOCAL VERSION -->
+    <script>
+        window.jquery || document.write("<script src='./assets/js/jquery_3.6.0.js'><\/script>")
+    </script>
+    <!-- JQUERY UI -->
+    <script src="./assets/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./assets/bootstrap/bootstrap_5.1.0/js/bootstrap.min.js"></script>
+    <!-- MY JS -->
+    <script src="./assets/js/my_script.js"></script>
+
+</body>
+
+</html>
